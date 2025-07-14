@@ -1,0 +1,48 @@
+ # Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data and model output
+# *.csv
+*.tsv
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.npy
+*.npz
+*.db
+*.sqlite3
+
+# Plot and image outputs
+# *.png
+# *.jpg
+# *.jpeg
+*.svg
+*.pdf
+
+# Environment files
+.env
+.venv
+env/
+venv/
+ENV/
+
+# VSCode settings
+.vscode/
+
+# MacOS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# System files
+Thumbs.db
