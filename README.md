@@ -11,7 +11,7 @@ The goal is to simulate and analyze how electrochemical parameters change over a
 - **cepmod.csv**: Contains per-hour values for 28 days (672 hours) for the following parameters:
   - `CPEpor_F`, `CPEpor_n`, `Rpor`, `CPEb_F`, `CPEb_n`, and `Rb` (target)
   - Data is linearly interpolated between initial (1 hour) and final (28 days) experimental values.
-  
+
 ## Workflow (real_cp.ipynb)
 
 1. **Data Generation**: Synthetic time-series data is generated and saved to `cepmod.csv`.
@@ -24,11 +24,13 @@ The goal is to simulate and analyze how electrochemical parameters change over a
 
 ## Plots and Their Interpretation
 
-### 1. Predicted vs. Actual Plot (`act_v_pred.png`)
+### 1. Predicted vs. Actual Plot 
+![Scatter Plot](act_v_pred.png)
 - **Concept**: This scatter plot compares the predicted Rb values to the actual Rb values for both the training and testing sets.
 - **Interpretation**: Points close to the diagonal (red dashed line) indicate accurate predictions. A tight cluster along the line means the model is performing well. Systematic deviations or spread indicate bias or variance issues.
 
-### 2. Residual Plots (`residual_plots.png`)
+### 2. Residual Plots 
+![Residual Plot](residual_plots.png)
 - **Concept**: These plots show the residuals (errors: actual - predicted) versus the predicted values for both training and testing sets.
 - **Interpretation**: Ideally, residuals should be randomly scattered around zero, indicating no systematic error. Patterns (e.g., funnel shapes or curves) suggest model misspecification or heteroscedasticity.
 
